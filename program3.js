@@ -1,10 +1,15 @@
-let units = ("Enter units consumed:");
-let bill;
+let electricityBill = function(units){
+    return units;
+}       
+let unitsConsumed = 150;  
+let billAmount = electricityBill(unitsConsumed) * 5;                
+console.log("Electricity Bill Amount: " + billAmount);
 
-if (units <= 100) {
-    bill = units * 5;
-} else {
-    bill = units * 8;
+if(billAmount > 500){       
+    console.log("High Bill Amount");
+}
+else{
+    console.log("Bill Amount is within limit");
 }
 
-console.log("Total Bill = Rs.", bill);
+

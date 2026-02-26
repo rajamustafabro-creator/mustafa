@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Tracker</title>
+</head>
+
+<body>
+
+<h2>My Location Tracker</h2>
+
+<button onclick="getLocation()">Get Location</button>
+
+<p id="loc"></p>
+
+<script>
+
 function getLocation() {
 
     if (navigator.geolocation) {
@@ -16,3 +32,8 @@ function showLocation(position) {
     "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
 }
+
+</script>
+
+</body>
+</html>

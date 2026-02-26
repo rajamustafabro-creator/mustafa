@@ -34,6 +34,4 @@ function analyzeNumbers(arr) {
         average: average
     };
 }
-
-// Function Call
 console.log(analyzeNumbers([10, 20, 30]));
